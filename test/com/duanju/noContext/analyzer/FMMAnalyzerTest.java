@@ -27,9 +27,9 @@ public class FMMAnalyzerTest {
 	@Test
 	public void run() {
 
-		File file = new File("trunk\\resource\\dic\\dict.dic");
+		File dictFile = new File("trunk\\resource\\dic\\dict.dic");
 
-		FMMAnalyzer analyzer = FMMAnalyzer.getAnalyzer(file);
+		FMMAnalyzer analyzer = FMMAnalyzer.getAnalyzer(dictFile);
 
 		System.out
 				.println(analyzer
