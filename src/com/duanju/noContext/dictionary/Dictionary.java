@@ -38,5 +38,4 @@ public class Dictionary {
 	public Character find(char c) {
 		return hash.get(c);
 	}
-
 }
