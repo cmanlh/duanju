@@ -5,7 +5,7 @@
 
 目前先完成了正向最大匹配
 
-File dictFile = new File("trunk\\resource\\dic\\dict.dic");
+		File dictFile = new File("trunk\\resource\\dic\\dict.dic");
 
 		FMMAnalyzer analyzer = FMMAnalyzer.getAnalyzer(dictFile);
 
