@@ -47,8 +47,11 @@ public class DuanJuEntry implements Entry<Character> {
 		if (c.hashCode() == member.hashCode()) {
 			DuanJuHash nextChar = c.nextChar();
 			if (null != nextChar) {
+				c.setToBeWord(member.beWordGotHere());
+
 				c.nextChar().addAll(member.nextChar());
 			} else {
+				member.setToBeWord(c.beWordGotHere());
 				c = member;
 			}
 

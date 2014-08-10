@@ -61,6 +61,14 @@ public class Character {
 		return true;
 	}
 
+	public boolean setToBeWord(boolean beWord) {
+		boolean old = beWordWithPres;
+
+		beWordWithPres = beWordWithPres ? beWordWithPres : beWord;
+
+		return old;
+	}
+
 	public boolean beWordGotHere() {
 		return beWordWithPres;
 	}
